@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern JavaScript Exercises</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Hands-on practice</p>
+        <h1>Modern JavaScript Exercises</h1>
+      </div>
+      <div class="progress-panel" aria-label="Learning progress">
+        <span id="progressText">0 of 20 done</span>
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+      </div>
+    </header>
+    <main class="layout">
+      <aside class="sidebar">
+        <section><h2>Learn</h2><nav id="conceptList" class="lesson-list" aria-label="Concept exercises"></nav></section>
+        <section><h2>Mini tasks</h2><nav id="taskList" class="lesson-list" aria-label="Mini task exercises"></nav></section>
+      </aside>
+      <section class="workspace" aria-live="polite">
+        <div class="workspace-head">
+          <div><p id="exerciseType" class="eyebrow">Concept</p><h2 id="exerciseTitle">Variables</h2></div>
+          <button id="markDoneButton" class="ghost-button" type="button">Mark done</button>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-card"><h3>Goal</h3><p id="exerciseGoal"></p></article>
+          <article class="lesson-card"><h3>Try this</h3><ol id="exerciseSteps"></ol></article>
+        </div>
+        <section class="code-area">
+          <div class="section-title"><h3>Starter code</h3><button id="copyButton" class="small-button" type="button">Copy</button></div>
+          <pre><code id="exerciseCode"></code></pre>
+        </section>
+        <section class="playground">
+          <div class="section-title"><h3>Interactive demo</h3><button id="resetDemoButton" class="small-button" type="button">Reset</button></div>
+          <div id="demoRoot"></div>
+        </section>
+      </section>
+    </main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
